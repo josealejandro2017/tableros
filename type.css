@@ -1,1 +1,10 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
+body{
+    background-image: url(https://freefrontend.com/assets/img/css-background-patterns/windows-95-background-in-css.png);
+    font-family: cursive ;
+
+}
