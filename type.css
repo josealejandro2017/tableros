@@ -57,6 +57,31 @@ header label:hover{
     text-align: center;
     
 }
+/* reponsive*/
 
+@media (max-width: 768px) {
+
+    header label {
+        display: block;
+    }
+    .menu {
+        position: absolute;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5;
+    }
+
+    .menu ul {
+
+        flex-direction: column;
+    }
+
+    .menu li {
+        border-top: 1px solid white;
+    }
+    #btn_menu:checked ~ .menu {
+        margin: 0px;
+    }
+}
 
 
