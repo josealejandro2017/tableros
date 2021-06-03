@@ -2,6 +2,61 @@
     margin: 0px;
     padding: 0px;
 }
+	
+/* para el menu*/
+#btn-menu{
+    background-image: url(imagen/fondo3.jpg);
+}
+
+
+#btn-menu {
+    display: none;
+}
+
+header label {
+display: none;
+width: 30px;
+height: 30px;
+padding: 10px;
+border-right: transparent;
+}
+
+header label:hover{
+    cursor: pointer;
+    background: rgba(0,0,0,0.3)
+}
+
+.menu ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    
+    
+}
+
+.menu li :hover {
+
+    background: rgba(0,0,0,0.4)
+}
+
+.menu li {
+    flex-grow: 1;
+    /*border: 2px solid rgba(3, 133, 255, 0.76);*/
+    background: rgba(37, 115, 231, 0.753);
+    
+    
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: rgba(0, 0, 0, 0.541);;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
 
 .base {
   display: flex;
