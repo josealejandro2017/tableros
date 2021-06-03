@@ -4,6 +4,7 @@
 }
 	
 /* para el menu*/
+
 #btn-menu{
     background-image: url(imagen/fondo3.jpg);
 }
@@ -57,49 +58,71 @@ header label:hover{
     
 }
 
-
-.base {
+* {margin:0;padding:0}
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body{ 
+  width:100vw;
+  height:100vh;
+  background: #1d1e22;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  height: 100vh;
-  width: 100vw;
-  margin: -8px;
-  padding-top: 1vh;
+	flex-direction:column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+  .firebase{
+    position:relative;
+    .parent_triangel {
+        width: 0;
+        height: 0;
+        border-left: 40px solid transparent;
+        border-right: 160px solid transparent;
+        border-bottom: 220px solid #efa61c;
+        position:relative;
+      &:after {
+        content: '';
+        position:absolute;
+        width: 0;
+        height: 0;
+        opacity:.8;
+        top:25px;
+        left: -40px;
+        z-index:2;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        border-bottom: 195px solid #eb8325;
+      }
+      .triangel{
+        width: 0;
+        height: 0;
+        top:40px;
+        left:-40px;
+        z-index:3;
+        position:relative;
+        border-left: 150px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 180px solid #f4cb2c;
+        &:before {
+          content: '';
+          position:absolute;
+          width: 0;
+          height: 0;
+          top:180px;
+          left: -150px;
+          border-left: 100px solid transparent;
+          border-right: 100px solid transparent;
+          border-top: 50px solid #f4cb2c;
+        }
+      }
+    }
+    .firbase_title{
+      color: #fff;
+      margin-top: 2em;
+      text-align:center;
+      font-family: 'Roboto', sans-serif;
+      letter-spacing: 1px;
+    }
+  }
 }
 
-.asanoha{
-  height: 100%;
-  width: 100%;
-  background:
-	linear-gradient(90deg, pink 20px, transparent 20px, transparent calc(100% - 20px), pink calc(100% - 20px)) 0 0 / 120px 70px,
-	linear-gradient(0deg, darkred 2px, transparent 2px) 0 39px / 80px 69px,
-	pink;
-}
-.asanoha:before,
-.asanoha:after {
-	content: '';
-	position: absolute;
-	top: 5px;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	mix-blend-mode: multiply;
-}
-.asanoha:before{
-  background:
-	linear-gradient(90deg, darkred 2px, transparent 2px) 0 0 / 60px 140px,
-	linear-gradient(30deg, transparent 50%, darkred 50%, darkred calc(50% + 2px), transparent calc(50% + 2px)) 0 0 / 120px 70px,
-	linear-gradient(-30deg, transparent 50%, darkred 50%, darkred calc(50% + 2px), transparent calc(50% + 2px)) 0 0 / 120px 70px,
-	linear-gradient(90deg, transparent 40px, #fff 40px, #fff calc(100% - 40px), transparent calc(100% - 40px)) 0 0 / 120px 70px,
-	linear-gradient(0deg, darkred 2px, transparent 1px) 0 0 / 40px 70px;
-}
-.asanoha:after {
-	background:
-	linear-gradient(90deg, #fff 20px, transparent 20px) 20px 0 / 60px 70px,
-	linear-gradient(-60deg, transparent calc(50% - 2px), darkred calc(50% - 2px), darkred calc(50% + 1px), transparent calc(50% + 1px)) 0 0 / 40px 70px,
-	linear-gradient(60deg, transparent calc(50% - 2px), darkred calc(50% - 2px), darkred calc(50% + 1px), transparent calc(50% + 1px)) 0 0 / 40px 70px;
-}
 
