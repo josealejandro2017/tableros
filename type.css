@@ -194,3 +194,13 @@ details p {
   
 }
 
+.formulario .botons {
+  width: 100%;
+  background: #1f53c5;
+  border: none;
+  padding: 12px;
+  color: #000000;
+  margin: 16px o;
+  font-size: 16px;
+}
+
