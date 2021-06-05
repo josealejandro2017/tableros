@@ -6,7 +6,7 @@
 /* para el menu*/
 
 #btn-menu{
-    background-image: url(imagen/fondo3.jpg);
+    background-image: url(desarrollo web/imagen/fondo3.jpg);
 }
 
 
@@ -168,7 +168,7 @@ details p {
 }
 .formulario {
   width: 400px;
-  background: #24303c;
+  background: rgba(37, 115, 231, 0.753);
   padding: 30px;
   margin: auto;
   margin-top: 100px;
@@ -184,7 +184,7 @@ details p {
 
 .controls {
   width : 100%;
-  background:#24303c;
+  background:rgb(255, 255, 255);
   padding: 10px;
   border-radius: 4px;
   margin-bottom: 16px;
