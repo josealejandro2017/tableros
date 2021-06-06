@@ -1,0 +1,122 @@
+/*prueba*/
+
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+     margin: 0;
+}
+h1, h2, h3, p, a, ul {
+     font-family: 'Raleway', sans-serif;
+	color: #000;
+}
+.site-container {
+	max-width: 1700px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+$box: #0D284F;
+
+
+nav {
+	position:fixed;
+	width: 100%;
+	ul {
+		list-style: none;
+		text-align: center;
+		li {
+			display: inline-block;
+			margin-right: 60px;
+			position:relative;
+			top: -100px;
+			&:last-child {
+				margin-right: 0;
+			}
+			a {
+				text-decoration: none;
+			}
+		}
+	}
+}
+.hero {
+	background-color: #f5f5f5;
+	width: 100%;
+	height: 100vh;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	overflow:hidden;
+	&__item {
+		padding-left: 80px;
+		&:last-child {
+			padding-left: 0;
+			padding-right: 180px;
+		}
+		.title {
+			// opacity: 1;
+			position:relative;
+		}
+		h1 {
+			font-size: 90px;
+			position:relative;
+		}
+		img {
+			z-index: 2;
+			position:relative;
+			opacity: 0;
+			right: -1000px;
+		}
+	}
+}
+
+.boxes {
+	position:relative;
+	&__box {
+		min-width: 120px;
+		min-height: 120px;
+		background-color: $box;
+		position: absolute;
+		top: -70px;
+		left: -20px;
+		&:first-child {
+			top: -210px;
+			left: 0;
+		}
+		&:nth-child(2) {
+			background-color: lighten($box, 5%);
+			bottom: -50px;
+			left: -90px;
+			top:auto;
+			height: 240px;
+			width: 240px
+		}
+		&:nth-child(3) {
+			background-color: lighten($box, 4%);
+			top: -50px;
+			right: 40px;
+			left: auto;
+			height: 200px;
+			width: 200px;
+		}
+		&:nth-child(4) {
+			background-color: lighten($box, 7%);
+			top: -30px;
+			left:-120px;
+			height:220px;
+			width:220px;
+				
+		}
+		&:nth-child(5) {
+			background-color: lighten($box, 2%);
+			right: -50px;
+			top: auto;
+			left:auto;
+			bottom:-40px;
+			height: 170px;
+			width: 170px;
+		}
+		
+	}
+}
