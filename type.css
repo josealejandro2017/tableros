@@ -1,206 +1,106 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300);
+
 * {
-    margin: 0px;
-    padding: 0px;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-	
-/* para el menu*/
-
-#btn-menu{
-    background-image: url(desarrollo web/imagen/fondo3.jpg);
-}
-
-
-#btn-menu {
-    display: none;
-}
-
-header label {
-display: none;
-width: 30px;
-height: 30px;
-padding: 10px;
-border-right: transparent;
-}
-
-header label:hover{
-    cursor: pointer;
-    background: rgba(0,0,0,0.3)
-}
-
-.menu ul {
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-    display: flex;
-    
-    
-}
-
-.menu li :hover {
-
-    background: rgba(0,0,0,0.4)
-}
-
-.menu li {
-    flex-grow: 1;
-    /*border: 2px solid rgba(3, 133, 255, 0.76);*/
-    background: rgba(37, 115, 231, 0.753);
-    
-    
-}
-
-.menu li a {
-    display: block;
-    padding: 15px 20px;
-    color: rgba(0, 0, 0, 0.541);;
-    text-decoration: none;
-    text-align: center;
-    
-}
-/* reponsive*/
-
-@media (max-width: 768px) {
-
-    header label {
-        display: block;
-    }
-    .menu {
-        position: absolute;
-        width: 70%;
-        margin-left: -70%;
-        transition: all 0.5;
-    }
-
-    .menu ul {
-
-        flex-direction: column;
-    }
-
-    .menu li {
-        border-top: 1px solid white;
-    }
-    #btn_menu:checked ~ .menu {
-        margin: 0px;
-    }
-}
-
-/*descripcion detallada*/
-
-
-.root {
-  padding: 0;
-  margin: 0;
-  font-size: 30px;
-}
-
 body {
-  font: menu;
-  font-size: 1rem;
-  line-height: 1.4;
-  padding: 0;
-  margin: 0;
+	font-family: 'Montserrat', sans-serif;
 }
-section {
-  padding-top: 4rem;
-  width: 50%;
-  margin: auto;
+.container {
+	width: 100%;
+	height: 100%;
+}
+nav {
+	position: fixed;
+	display: flex;
+	align-items: flex-start;
+	width: 20%;
+	height: 100%;
+	background-color: #111;
+}
+main {
+	position: fixed;
+	right: 0;
+	width: 80%;
+	height: 100%;
+	background-color: #fff;
+	overflow: auto;
+	padding: 40px;
 }
 h1 {
-  font-size: 2rem;
-  font-weight: 500;
+	font-weight: bold;
+	margin-bottom: 50px;
+	font-size: 55px;
+	text-align: center;
 }
-details[open] summary ~ * {
-  animation: open 0.3s ease-in-out;
+p {
+	margin-bottom: 20px;
+	line-height: 26px;
 }
-
-@keyframes open {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+p::first-letter {
+	font-size: 200%;
+	font-weight: bold;
 }
-details summary::-webkit-details-marker {
-  display: none;
+li, ul label.title, ul, a {
+	width: 100%;
+	color: #FFF;
+	font-family: 'Montserrat', 'Open Sans', sans-serif;
+	display: block;
+	font-weight: bold;
 }
-
-details summary {
-  width: 100%;
-  padding: 0.5rem 0;
-  border-top: 1px solid black;
-  position: relative;
-  cursor: pointer;
-  font-size: 1.25rem;
-  font-weight: 300;
-  list-style: none;
+ul label {
+	height: 35px;
 }
-
-details summary:after {
-  content: "+";
-  color: black;
-  position: absolute;
-  font-size: 1.75rem;
-  line-height: 0;
-  margin-top: 0.75rem;
-  right: 0;
-  font-weight: 200;
-  transform-origin: center;
-  transition: 200ms linear;
+ul li{
+	height: 35px;
+	overflow: hidden;
+	transition: all .3s;
 }
-details[open] summary:after {
-  transform: rotate(45deg);
-  font-size: 2rem;
+li {
+	display: block;
+	background-color: #363636;
 }
-details summary {
-  outline: 0;
+label.title {
+	font-size: 14px;
+	background: linear-gradient(#111, #2f2f2f);
+	padding: 10px 15px;
+	cursor: pointer;
+  transition: all .25s;
 }
-details p {
-  font-size: 0.95rem;
-  margin: 0 0 1rem;
-  padding-top: 1rem;
+a{
+	font-size: 12px;
+	text-decoration: none;
+	color: #FFF;
+	display: block;
+	padding: 10px 25px;
+	transition: all .25s;
 }
- /*formulario*/
-*{
-  margin: 0;
-  padding: 0;
-  box.sizing: border-box;
+a:hover {
+	background-color: #444;
+  box-shadow: inset 5px 0px 0px 0px #fff;
 }
-.formulario {
-  width: 400px;
-  background: rgba(37, 115, 231, 0.753);
-  padding: 30px;
-  margin: auto;
-  margin-top: 100px;
-  border-radius: 4px;
-  font-family: "calibri"
+label:hover {
+	text-shadow: 0px 0px 10px #fff;
 }
-
-.formulario h4 {
-  font-size: 22px;
-  margin-bottom: 20px;
-  
+input[type="radio"] {
+	display: none;
 }
-
-.controls {
-  width : 100%;
-  background:rgb(255, 255, 255);
-  padding: 10px;
-  border-radius: 4px;
-  margin-bottom: 16px;
-  border: 1px solid #1f53c5;
-  font-family: "calibri"
-  font-size: 18px;
-  
+#edit:checked + li, #archive:checked + li, #tools:checked + li, #preferences:checked + li {
+	height: 179px;
 }
-
-.formulario .botons {
-  width: 100%;
-  background: #1f53c5;
-  border: none;
-  padding: 12px;
-  color: #000000;
-  margin: 16px o;
-  font-size: 16px;
+i {
+	margin-right: 12px;
 }
-
+@media screen and (max-width: 600px){
+	nav {
+		width: 100%;
+		position: relative;
+	}
+	main {
+		width: 100%;
+		position: relative;
+	}
+}
