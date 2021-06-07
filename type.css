@@ -29,6 +29,16 @@ main {
 	overflow: auto;
 	padding: 40px;
 }
+                 footer {
+                  background: rgb(255, 255, 255) ;
+                 
+                        height: 100px;
+                        width: auto;
+                        margin: auto;
+                 
+
+                }
+           
 h1 {
 	font-weight: bold;
 	margin-bottom: 50px;
