@@ -29,14 +29,10 @@ main {
 	overflow: auto;
 	padding: 40px;
 }
-                 footer {
-                  background: rgb(255, 255, 255) ;
-                 
-                        height: 100px;
-                        width: auto;
-                        margin: auto;
-                 
-
+ footer {
+        background: rgb(255, 255, 255) ;
+          height: 100px;
+   
                 }
            
 h1 {
