@@ -21,7 +21,7 @@ nav {
 	background-color: #111;
 }
 main {
-	position: fixed;
+	position: absolute;
 	right: 0;
 	width: 80%;
 	height: 100%;
@@ -32,8 +32,10 @@ main {
  footer {
         background: rgb(255, 255, 255) ;
           height: 100px;
-	  width: auto;
+	      width: auto;
           margin: auto;
+          padding: 60px;
+       
    
                 }
            
