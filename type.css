@@ -30,6 +30,14 @@ main {
 	padding: 40px;
 }
 
+ footer {
+          background: rgb(255, 255, 255) ;
+          height: 100px;
+	  width: 50%;
+          margin: auto;
+          
+      
+                }
 h1 {
 	font-weight: bold;
 	margin-bottom: 50px;
