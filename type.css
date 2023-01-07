@@ -79,18 +79,6 @@ label.title {
 	cursor: pointer;
   	transition: all .25s;
 }
-a{
-	font-size: 12px;
-	text-decoration: none;
-	color: #FFF;
-	display: block;
-	padding: 10px 25px;
-	transition: all .25s;
-}
-a:hover {
-	background-color: #444;
-  	box-shadow: inset 5px 0px 0px 0px #fff;
-}
 label:hover {
 	text-shadow: 0px 0px 10px #fff;
 }
