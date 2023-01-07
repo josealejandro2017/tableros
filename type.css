@@ -76,7 +76,7 @@ label.title {
 	background: linear-gradient(#111, #2f2f2f);
 	padding: 10px 15px;
 	cursor: pointer;
-  transition: all .25s;
+  	transition: all .25s;
 }
 a{
 	font-size: 12px;
@@ -88,7 +88,7 @@ a{
 }
 a:hover {
 	background-color: #444;
-  box-shadow: inset 5px 0px 0px 0px #fff;
+  	box-shadow: inset 5px 0px 0px 0px #fff;
 }
 label:hover {
 	text-shadow: 0px 0px 10px #fff;
