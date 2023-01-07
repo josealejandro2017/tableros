@@ -9,15 +9,15 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 .container {
-	width: 100%;
-	height: 100%;
+	width: 50%;
+	height: 50%;
 }
 nav {
 	position: fixed;
 	display: flex;
 	align-items: flex-start;
 	width: 20%;
-	height: 100%;
+	height: 50%;
 	background-color: #111;
 }
 main {
